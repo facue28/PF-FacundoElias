@@ -1,0 +1,82 @@
+
+$text-color:#23022ef8;
+$text-botton:#5b0577f8;
+$bground-color:#ffffff;
+
+@mixin mobile {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
+.section-video{
+    .container{
+        @include mobile{
+            padding: 0;
+        }
+        .row{
+            div{
+                display: flex;
+                justify-content: center;
+                margin: 3rem 0;
+                width: 90%;
+                @include mobile{
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    
+}
+
+.section-noticias {
+    margin: 10rem 0;
+    h1 {
+        padding: 3rem 0;
+    }
+    .row{
+        padding: 3rem 0;
+            div{
+                display: flex;
+                justify-content: center;
+                margin: 1rem 0;
+                .img-tam{
+                    aspect-ratio: 3/2;
+                    object-fit: cover;
+                }
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .body{
+                        .card-text {
+                            margin: 1rem 0;
+                        }
+                    }
+                    .botton{
+                        display: flex;
+                        align-items: end;
+
+                        a{
+                            margin-top: 1.5rem ;
+                            font-size: 1.3rem;
+                            background-color: $text-botton;
+                            color:$bground-color;
+                            .btn-primary{
+                                display: flex;
+                                justify-content: end;
+                                margin-top: auto;
+                                padding: 0.5rem 1rem;
+                                width: 40%;
+                                border: none;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    
+                    
+                }
+            }
+        }
+    }

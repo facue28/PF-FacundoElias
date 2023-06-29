@@ -1,0 +1,74 @@
+
+$text-color:#23022ef8;
+$text-botton:#5b0577f8;
+$bground-color:#ffffff;
+
+@mixin mobile {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+header{
+    margin-bottom: 3rem;
+    @include mobile{
+        margin-bottom: 8rem;
+    }
+    .nav-container{
+        display: flex;
+        justify-content:space-between;
+        padding:0;
+        height:20rem;
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            // align-items: end;
+        }
+        .logo-ubicacion{
+            display: flex;
+            align-items: center;
+            width: 40%;
+            padding-left: 1rem;
+            @include mobile {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 0;
+            }
+            .nav-logo{
+                    display: flex;
+                    align-items: center;
+                    .img-logo{
+                        width: 100%;
+                    }
+            }
+        }
+        .navbar-pers{
+            display: flex;
+            align-items: end;
+            padding-bottom: 0;
+            z-index: 1;
+            .navbar-nav{
+                padding: 0 1rem;
+                .nav-item{
+                    margin: 0 1rem;
+                    .nav-link{
+                        padding-right: 1rem;
+                        font-size: 2.2rem;
+                        color:$text-color;
+                        @include mobile {
+                            display: inline-flex;
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                        }
+                        &:hover{
+                            box-shadow: 1px 1px #5b0577f8, 6px 6px #5b0577f8, 3px 3px
+                        }
+                    } 
+                    
+                }
+            }
+            
+        }
+    }
+}

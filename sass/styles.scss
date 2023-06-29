@@ -1,0 +1,62 @@
+// @use 'assets/media-query';
+@use 'assets/header.scss';
+@use 'assets/footer.scss';
+@use 'index.scss';
+@use 'sobre-el-blog';
+@use 'restauranes';
+@use 'recetas';
+@use 'contacto';
+@use 'milanesaBerenjena';
+@use 'tortaChocolate';
+
+$text-color:#23022ef8;
+$text-botton:#5b0577f8;
+$bground-color:#ffffff;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size:4rem ;
+    color: $text-color;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: $text-color;
+}
+
+h3 {
+    font-size: 1.7rem;
+    color: $text-color;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: $text-color;
+}
+
+li {
+    font-size: 1.4rem;
+    color: $text-color;
+}
+
+
+// .body-container 
+.body-container{
+    width: 100%;
+    padding: 0;
+    background-image:url(../img/fotoFondoWeb.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat ;
+    background-attachment:fixed ;
+}
+
