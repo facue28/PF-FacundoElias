@@ -1,7 +1,7 @@
 header {
   margin-bottom: 3rem;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   header {
     margin-bottom: 8rem;
   }
@@ -12,7 +12,7 @@ header .nav-container {
   padding: 0;
   height: 20rem;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   header .nav-container {
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ header .nav-container .logo-ubicacion {
   width: 40%;
   padding-left: 1rem;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   header .nav-container .logo-ubicacion {
     display: flex;
     justify-content: center;
@@ -57,7 +57,7 @@ header .nav-container .navbar-pers .navbar-nav .nav-item .nav-link {
   font-size: 2.2rem;
   color: rgba(35, 2, 46, 0.9725490196);
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   header .nav-container .navbar-pers .navbar-nav .nav-item .nav-link {
     display: inline-flex;
     font-size: 1.5rem;
@@ -76,12 +76,18 @@ footer {
   padding-bottom: 1rem;
   padding-top: 2rem;
 }
+@media screen and (max-width: 576px) {
+  footer {
+    flex-direction: column;
+  }
+}
 footer .col-footer {
   display: flex;
   justify-content: start;
   align-items: start;
+  margin-left: 2rem;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   footer .col-footer {
     display: flex;
     justify-content: center;
@@ -92,15 +98,10 @@ footer .footer-ul {
   justify-content: start;
   width: 50%;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
-  footer .footer-ul {
-    justify-content: center;
-  }
-}
 footer .footer-ul .ul-redes {
   display: flex;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   footer .footer-ul .ul-redes {
     display: flex;
     justify-content: center;
@@ -115,7 +116,7 @@ footer .footer-ul .ul-redes li a {
   font-size: 3rem;
   color: rgba(91, 5, 119, 0.9725490196);
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   footer .col-list {
     display: flex;
     justify-content: center;
@@ -125,7 +126,7 @@ footer .col-list ul {
   display: flex;
   justify-content: center;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   footer .col-list ul {
     display: flex;
     justify-content: center;
@@ -147,7 +148,7 @@ footer .col-mail {
   display: flex;
   justify-content: end;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   footer .col-mail {
     display: flex;
     justify-content: center;
@@ -159,7 +160,7 @@ footer .col-mail .footer-email {
   width: 80%;
   font-size: 1rem;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   footer .col-mail .footer-email {
     justify-content: center;
   }
@@ -169,11 +170,6 @@ footer .col-mail .footer-email .footer-div {
   flex-direction: column;
   justify-content: end;
   padding-right: 2rem;
-}
-@media only screen and (min-width: 360px) and (max-width: 768px) {
-  footer .col-mail .footer-email .footer-div {
-    padding: 0;
-  }
 }
 footer .col-mail .footer-email .footer-div input {
   display: flex;
@@ -187,7 +183,7 @@ footer .col-mail .footer-email .footer-div input {
   background-color: rgba(91, 5, 119, 0.9725490196);
 }
 
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .section-video .container {
     padding: 0;
   }
@@ -198,7 +194,7 @@ footer .col-mail .footer-email .footer-div input {
   margin: 3rem 0;
   width: 90%;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .section-video .container .row div {
     width: 100%;
     margin: 0;
@@ -254,7 +250,7 @@ footer .col-mail .footer-email .footer-div input {
 .video-section {
   margin: 3rem 0;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .video-section .container {
     padding: 0;
   }
@@ -265,7 +261,7 @@ footer .col-mail .footer-email .footer-div input {
   margin: 3rem 0;
   width: 90%;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .video-section .container .row div {
     width: 100%;
     margin: 0;
@@ -293,7 +289,7 @@ footer .col-mail .footer-email .footer-div input {
   font-size: 3.2rem;
   padding-left: 7rem;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .container-blog .row .container-izquierdo .texto-izquierdo {
     font-size: 2rem;
     text-align: center;
@@ -310,7 +306,7 @@ footer .col-mail .footer-email .footer-div input {
   justify-content: center;
   padding-right: 2rem;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .container-blog .row .container-derecho {
     padding: 0;
   }
@@ -318,7 +314,7 @@ footer .col-mail .footer-email .footer-div input {
 .container-blog .row .container-derecho .container-imagen {
   padding-left: 7rem;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .container-blog .row .container-derecho .container-imagen {
     padding: 0;
   }
@@ -333,7 +329,7 @@ footer .col-mail .footer-email .footer-div input {
   height: 60rem;
   object-fit: cover;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .container-blog .row .container-derecho .container-imagen img {
     aspect-ratio: 4/4;
     height: 100%;
@@ -376,7 +372,7 @@ footer .col-mail .footer-email .footer-div input {
 .container-restauranes .row h2 {
   text-align: center;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .container-restauranes .row {
     justify-content: center;
   }
@@ -422,7 +418,7 @@ footer .col-mail .footer-email .footer-div input {
 .container-recetas .row div {
   margin: 1.5rem 0;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .container-recetas .row div {
     margin: 0.5rem 0;
   }
@@ -452,7 +448,7 @@ footer .col-mail .footer-email .footer-div input {
     width: 70%;
   }
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .container-contacto {
     width: 100%;
     padding: 0;
@@ -565,7 +561,7 @@ footer .col-mail .footer-email .footer-div input {
   justify-content: center;
   padding: 2rem 5rem;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .container-pasos .row .col-ingredientes2 {
     justify-content: start;
   }
@@ -584,7 +580,7 @@ footer .col-mail .footer-email .footer-div input {
   padding-right: 20rem;
   padding-bottom: 3rem;
 }
-@media only screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .container-pasos .row .col-receta2 {
     padding: 0 5rem;
   }
@@ -717,4 +713,4 @@ li {
   background-attachment: fixed;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.scss.map */

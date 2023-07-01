@@ -2,7 +2,7 @@ $text-color:#23022ef8;
 $text-botton:#5b0577f8;
 
 @mixin mobile {
-    @media screen and (max-width: 576px) {
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
         @content;
     }
 }
