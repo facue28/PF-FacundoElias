@@ -4,19 +4,22 @@ $text-botton:#5b0577f8;
 $bground-color:#ffffff;
 
 @mixin mobile {
-    @media screen and (max-width: 576px) {
+    @media only screen and (min-width: 360px) and (max-width: 768px) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media screen and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 990px) {
         @content;
     }
 }
 
+html{
+    overflow-x: hidden;
+}
+
 .container-receta{
-    // background-color:$bground-color;
     margin: 3rem 0;
     padding: 3rem 0;
     .row{
@@ -33,7 +36,6 @@ $bground-color:#ffffff;
             padding-left: 3rem;
             padding-right: 3rem;
             margin: 3rem 0rem;
-            /// no funciona el "padding:3rem 0"
             img{
                 width: 50%;
                 aspect-ratio: 4/3;
@@ -62,6 +64,9 @@ $bground-color:#ffffff;
             }
             ul{
                 list-style: none;
+                @include tablet{
+                    padding: 0;
+                }
             }
         }
         .col-receta1{
@@ -73,11 +78,16 @@ $bground-color:#ffffff;
                 padding: 0 5rem;
             }
             @include tablet {
-                padding: 5rem;
+                justify-content: start;
+                padding: 0 5rem;
                 
             }
             ol{
             list-style: none;
+            @include tablet{
+                justify-content: start;
+                padding: 0;
+            }
             }
         }
     }

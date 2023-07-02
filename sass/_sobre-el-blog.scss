@@ -9,7 +9,7 @@ $bground-color:#ffffff;
 }
 
 @mixin tablet {
-    @media screen and (max-width: 768px){
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
         @content;
     }
 }
@@ -72,6 +72,9 @@ $bground-color:#ffffff;
             @include mobile{
                 padding: 0;
             }
+            @include tablet{
+                padding: 0;
+            }
             .container-imagen{
                 padding-left: 7rem;
                 @include mobile{
@@ -96,8 +99,6 @@ $bground-color:#ffffff;
                         display: flex;
                         justify-content: center;
                     }
-                    ///Aplicar media-query
-                    ///sacar padding , poner 4/3 y centrar
                 }
             }
         }

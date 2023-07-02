@@ -9,14 +9,14 @@ $bground-color:#ffffff;
     }
 }
 @mixin tablet {
-    @media screen and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
         @content;
     }
 }
 
 .container-receta{
     margin: 3rem 0;
-    padding: 3rem 0;
+    padding: 3rem 0.1rem;
     .row{
         padding: 0;
         h1{
@@ -31,7 +31,6 @@ $bground-color:#ffffff;
             padding-left: 3rem;
             padding-right: 3rem;
             margin: 3rem 0rem;
-            /// no funciona el "padding:3rem 0"
             img{
                 width: 50%;
                 aspect-ratio: 4/3;
@@ -52,7 +51,7 @@ $bground-color:#ffffff;
         .col-ingredientes2{
             display: flex;
             justify-content: center;
-            padding: 2rem 5rem;
+            padding: 3rem 5rem;
             @include mobile{
                 justify-content: start;
             }
@@ -66,8 +65,9 @@ $bground-color:#ffffff;
         .col-receta2{
             display: flex;
             justify-content: center;
-            padding-right: 20rem;
-            padding-bottom: 3rem;
+            // padding-right: 20rem;
+            // padding-bottom: 3rem;
+            padding:3rem 20rem 3rem 0 ;
             @include mobile{
                 padding: 0 5rem;
             }

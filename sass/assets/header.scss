@@ -8,6 +8,12 @@ $bground-color:#ffffff;
         @content;
     }
 }
+
+@mixin tablet {
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+        @content;
+    }
+}
 header{
     margin-bottom: 3rem;
     @include mobile{
@@ -20,9 +26,12 @@ header{
         height:20rem;
         @include mobile {
             display: flex;
-            flex-direction: column;
             padding: 0;
-            // align-items: end;
+        }
+        @include tablet {
+            display: flex;
+            justify-content: center;
+            width: 100%;
         }
         .logo-ubicacion{
             display: flex;
@@ -34,6 +43,11 @@ header{
                 justify-content: center;
                 width: 100%;
                 padding: 0;
+            }
+            @include tablet {
+                display: flex;
+                justify-content: center;
+                width: 100%;
             }
             .nav-logo{
                     display: flex;
